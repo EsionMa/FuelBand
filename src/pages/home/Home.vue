@@ -1,7 +1,7 @@
 <template>
   <div class="container">
-    <div class="home-header">
-      <div class="home-header-info">
+    <div class="home-header" >
+      <div class="home-header-info" >
         <p class="home-header-title">今日步数</p>
         <div class="step-div">
          <span class="step-num">0</span><span >步</span>
@@ -19,56 +19,56 @@
     <div class="home-body" >
       <ul>
         <li>
-          <div class="content" style="margin:0.3rem 0 0 0.2rem;">
-            <img src="../../assets/images/sleep.png" style="width:0.7rem;" alt="">
+          <div class="content" >
+            <img class="icon-item" src="~images/sleep.png"  alt="">
             <span>睡眠监控</span>
-            <div style="float:right;margin:0.15rem 0.1rem 0 0 ">
-              <span style="color:#B5B5B5">无数据</span>
-              <img src="../../assets/images/enter.png" style="width:0.35rem;"  alt="">
+            <div class="icon-info" >
+              <span >无数据</span>
+              <img class="icon-enter" src="~images/enter.png"  alt="">
             </div>
           </div>
-          <div style="border-bottom:1px solid #F7F7F7;width:6rem;margin:0.1rem 0 0 0.8rem;margin"></div>
+          <div class="border-bottom"></div>
         </li>
         <li>
-          <div class="content" style="margin:0.3rem 0 0 0.2rem">
-            <img src="../../assets/images/rate.png" style="width:0.7rem;" alt="">
+          <div class="content">
+            <img class="icon-item" src="~images/rate.png"  alt="">
             <span>睡眠监控</span>
-            <div style="float:right;margin:0.15rem 0.1rem 0 0 ">
-              <span style="color:#B5B5B5">无数据</span>
-              <img src="../../assets/images/enter.png" style="width:0.35rem;"  alt="">
+            <div class="icon-info" >
+              <span >无数据</span>
+              <img class="icon-enter" src="~images/enter.png"   alt="">
             </div>
           </div>
-          <div style="border-bottom:1px solid #F7F7F7;width:6rem;margin:0.1rem 0 0 0.8rem;margin"></div>
+          <div class="border-bottom"></div>
         </li>
         <li>
-          <div class="content" style="margin:0.3rem 0 0 0.2rem">
-            <img src="../../assets/images/remind.png" style="width:0.7rem;" alt="">
+          <div class="content">
+            <img class="icon-item" src="~images/remind.png"  alt="">
             <span>喝水提醒</span>
-            <div style="float:right;margin:0.15rem 0.1rem 0 0 ">
-              <span style="color:#B5B5B5">0杯</span>
-              <img src="../../assets/images/enter.png" style="width:0.35rem;"  alt="">
+            <div class="icon-info">
+              <span>0杯</span>
+              <img class="icon-enter" src="~images/enter.png"  alt="">
             </div>
           </div>
-          <div style="border-bottom:1px solid #F7F7F7;width:6rem;margin:0.1rem 0 0 0.8rem;margin"></div>
+          <div class="border-bottom"></div>
         </li>
         <li>
-          <div class="content" style="margin:0.3rem 0 0 0.2rem">
-            <img src="../../assets/images/exercise.png" style="width:0.7rem;" alt="">
+          <div class="content">
+            <img class="icon-item" src="~images/exercise.png"  alt="">
             <span>运动报告</span>
-            <div style="float:right;margin:0.15rem 0.1rem 0 0 ">
+            <div class="icon-info">
               <span></span>
-              <img src="../../assets/images/enter.png" style="width:0.35rem;"  alt="">
+              <img class="icon-enter" src="~images/enter.png"  alt="">
             </div>
           </div>
-          <div style="border-bottom:1px solid #F7F7F7;width:6rem;margin:0.1rem 0 0 0.8rem;margin"></div>
+          <div class="border-bottom" ></div>
         </li>
         <li>
-          <div class="content" style="margin:0.3rem 0 0 0.2rem">
-            <img src="../../assets/images/chat.png" style="width:0.7rem;" alt="">
+          <div class="content">
+            <img class="icon-item" src="~images/chat.png"  alt="">
             <span>话题</span>
-            <div style="float:right;margin:0.15rem 0.1rem 0 0 ">
+            <div class="icon-info">
               <span></span>
-              <img src="../../assets/images/enter.png" style="width:0.35rem;"  alt="">
+              <img class="icon-enter" src="~images/enter.png"  alt="">
             </div>
           </div>
         </li>
@@ -84,6 +84,7 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
+// header部分
   .home-header
     position :relative
     display: flex
@@ -110,9 +111,26 @@ export default {
         height :0.65rem
         border-radius :0.5rem
         margin-top :0.5rem
+        background-color :#26ADFF
         .run-btn-name
           text-align :center
           margin-top :0.2rem
+  // body部分
+  .content
+    margin:0.3rem 0 0 0.2rem
   .content:active
     background-color :#E8E8E8
+  .icon-item
+    width: 0.7rem
+  .icon-info
+    float:right
+    margin:0.15rem 0.1rem 0 0 
+    .icon-enter
+      width:0.35rem;
+  .border-bottom
+    border-bottom:1px solid #F7F7F7
+    width:82%
+    margin:0.1rem 0 0 0.8rem
+  .icon-info span
+    color:#B5B5B5
 </style>
