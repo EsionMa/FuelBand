@@ -9,7 +9,7 @@
 export default {
   props: ['value'],
   computed: {
-    value () {
+    values () {
       return this.$route.matched[0].name
     }
   }

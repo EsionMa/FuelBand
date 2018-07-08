@@ -69,5 +69,5 @@ export default {
     color:#949494;
   &.is-active
     .m-tabbar-item-text
-      color: #e4e4e4;
+      color: #1296db;
 </style>
