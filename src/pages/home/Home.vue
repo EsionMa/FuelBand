@@ -124,7 +124,7 @@ export default {
     width: 0.7rem
   .icon-info
     float:right
-    margin:0.15rem 0.1rem 0 0 
+    margin:0.15rem 0.1rem 0 0
     .icon-enter
       width:0.35rem;
   .border-bottom
