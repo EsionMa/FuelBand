@@ -18,7 +18,7 @@
     </div>
     <div class="home-body" >
       <ul>
-        <router-link tag="li" to="/home/home-sleep">
+        <router-link tag="li" to="/home-sleep">
           <div class="content" >
             <img class="icon-item" src="~images/sleep.png"  alt="">
             <span>睡眠监控</span>

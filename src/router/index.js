@@ -32,7 +32,7 @@ export default new Router({
       component: My
     },
     {
-      path: '/home/home-sleep',
+      path: '/home-sleep',
       component: HomeSleep
     },
     {
