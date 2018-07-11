@@ -1,7 +1,8 @@
 <template>
   <div id="app">
     <router-view></router-view>
-    <m-tabbar v-model="select">
+    <tab></tab>
+    <!-- <m-tabbar v-model="select">
       <m-tabbar-item id='Home' isRouter>
         <img src="./assets/images/HomeNormal.png" alt="" slot="icon-normal">
         <img src="./assets/images/HomeActive.png" alt="" slot="icon-active">
@@ -22,24 +23,26 @@
         <img src="./assets/images/MyActive.png" alt="" slot="icon-active">
         我
       </m-tabbar-item>
-    </m-tabbar>
+    </m-tabbar> -->
   </div>
 </template>
 
 <script>
-import mTabbar from './components/common/tabbar'
-import mTabbarItem from './components/common/tabbar-item'
+// import mTabbar from './components/common/tabbar'
+import Tab from './pages/tab/Tab'
+// import mTabbarItem from './components/common/tabbar-item'
 export default {
   name: 'app',
   components: {
-    mTabbar,
-    mTabbarItem
-  },
-  data () {
-    return {
-      select: 'Home'
-    }
+    // mTabbar,
+    // mTabbarItem
+    Tab
   }
+  // data () {
+  //   return {
+  //     select: 'Home'
+  //   }
+  // }
 }
 </script>
 

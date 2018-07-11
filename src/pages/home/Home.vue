@@ -18,7 +18,7 @@
     </div>
     <div class="home-body" >
       <ul>
-        <li>
+        <router-link tag="li" to="/home/home-sleep">
           <div class="content" >
             <img class="icon-item" src="~images/sleep.png"  alt="">
             <span>睡眠监控</span>
@@ -27,12 +27,12 @@
               <img class="icon-enter" src="~images/enter.png"  alt="">
             </div>
           </div>
-          <div class="border-bottom"></div>
-        </li>
+        </router-link>
+        <div class="border-bottom"></div>
         <li>
           <div class="content">
             <img class="icon-item" src="~images/rate.png"  alt="">
-            <span>睡眠监控</span>
+            <span>心率检测</span>
             <div class="icon-info" >
               <span >无数据</span>
               <img class="icon-enter" src="~images/enter.png"   alt="">

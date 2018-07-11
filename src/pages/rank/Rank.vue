@@ -100,7 +100,7 @@ export default {
       .top-icon
         width: 2rem
         height: 2rem
-        border :1px solid 
+        border :1px solid
         border-radius :50%
         margin-bottom  :.5rem
   .my-border
