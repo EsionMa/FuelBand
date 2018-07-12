@@ -16,7 +16,7 @@
         </div>
       </div>
     </div>
-    <div class="home-body" >
+    <div class="home-body" ref="wrapper">
       <ul>
         <router-link tag="li" to="/home-sleep">
           <div class="content" >
@@ -78,8 +78,12 @@
 </template>
 
 <script>
+import Bscroll from 'better-scroll'
 export default {
-  name: 'Home'
+  name: 'Home',
+  mounted () {
+    this.scroll = new Bscroll(this.$refs.wrapper)
+  }
 }
 </script>
 
