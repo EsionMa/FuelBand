@@ -17,7 +17,13 @@ export default new Router({
     },
     {
       path: '/home',
-      component: Home
+      component: Home,
+      children: [
+        {
+          path: 'homesleep',
+          component: HomeSleep
+        }
+      ]
     },
     {
       path: '/rank',
@@ -31,10 +37,10 @@ export default new Router({
       path: '/my',
       component: My
     },
-    {
-      path: '/home-sleep',
-      component: HomeSleep
-    },
+    // {
+    //   path: '/home-sleep',
+    //   component: HomeSleep
+    // },
     {
       path: '*',
       redirect: '/'

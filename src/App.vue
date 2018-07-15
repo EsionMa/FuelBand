@@ -1,7 +1,7 @@
 <template>
-  <div id="app">
-    <router-view></router-view>
-    <tab></tab>
+  <div>
+      <router-view></router-view>
+      <tab></tab>
   </div>
 </template>
 
@@ -16,4 +16,5 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
+
 </style>

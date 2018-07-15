@@ -144,12 +144,8 @@
 </template>
 
 <script>
-import Bscroll from 'better-scroll'
 export default {
-  name: 'My',
-  mounted () {
-    this.scroll = new Bscroll(this.$refs.wrapper)
-  }
+  name: 'My'
 }
 </script>
 
@@ -219,7 +215,6 @@ export default {
   .Content-body
     overflow-y : auto
     width : 100%
-    height : 5rem
    .div-title
     background : #efe7e7
    .div-title p
