@@ -92,6 +92,8 @@ export default {
   .p-body {
     font-size: 0.4rem;
     text-align: left;
+    overflow scroll
+    height 10rem
   }
 
   .p-body p {
@@ -100,6 +102,7 @@ export default {
   }
 
   .p-footer {
+    width 100%
     height .7rem
     background-color: #fff;
     display table-cell
@@ -107,12 +110,12 @@ export default {
     z-index: 50
     bottom 0
     position absolute
+    text-align center
   }
 
   .footer-write {
     display inline
     margin-left .4rem
-    // padding .2rem 0 0 .5rem
     width: .4rem
   }
 
