@@ -22,14 +22,51 @@
       <img src="~images/BMI.png" style="width:6rem;margin-left:10%;margin-top:.3rem" alt="">
       <img src="~images/standard.png" style="width:6rem;margin-top:.3rem" alt="">
       <div style="width:100%;height:.3rem;background-color:#F9F9F9"></div>
-      <img src="~images/weight.png" style="width:100%" alt="">
+      <div class="Weight-charts">
+        <div id="mychart" :style="{width:'auto',height:'300px'}"></div>
+      </div>
+      <div style="width:100%;height:.8rem;background-color:#F9F9F9"></div>
     </div>
   </div>
 </template>
 
 <script>
+import echarts from 'echarts'
 export default {
-  name: 'Train'
+  name: 'Train',
+  mounted () {
+    let mychart = echarts.init(document.getElementById('mychart'))
+    mychart.setOption({
+      title: {
+        text: '体重趋势（kg）',
+        textStyle: {
+          fontSize: '14',
+          fontStyle: 'normal',
+          fontWeight: 'lighter',
+        } 
+      },
+      tooltip: {},
+      xAxis: {
+        data: ['7/7','7/8','7/9','7/10','7/11','7/12','7/13']
+      },
+      yAxis: {
+        min: function(value) {
+          return value.min - 30;
+        },
+        max: function(value) {
+          return value.max + 10;
+        }
+      },
+      series: [{
+        name: '体重',
+        type: 'line',
+        data: [60,61,62,63,64,65,66,67],
+        label: {
+          show: true
+        }
+      }]  
+    })  
+  },
 }
 </script>
 
