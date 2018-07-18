@@ -215,6 +215,7 @@ export default {
   .Content-body
     overflow-y : auto
     width : 100%
+    height : 7rem
    .div-title
     background : #efe7e7
    .div-title p

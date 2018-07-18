@@ -4,7 +4,7 @@
       <img class="back-icon" src="~images/back.png" alt="">
       <span class="top-bar-title">话题</span>
     </div>
-    <div class="p-content">
+    <div class="p-content" ref="wrapper">
       <h1 class="p-title">运动的意义</h1>
       <div class="p-body">
         <p>1.助于培养人们勇敢顽强的性格、超越自我的品质、迎接挑战的意志和承担风险的能力。
@@ -14,6 +14,9 @@
         </p>
         <p>
           3.有助于丰富人们的文化生活，弘扬集体主义、爱国主义精神，增强国家和民族的向心力、凝聚力，都有着不可缺少的作用。
+        </p>
+        <p>
+          体育是人类社会发展中，根据生产和生活的需要，遵循人体身心的发展规律，以身体练习为基本手段，达到增强体质，提高运动技术水平，进行思想品德教育，丰富社会文化生活而进行的一种有目的、有意识、有组织的社会活动，是伴随人类社会的发展而逐步建立和发展起来的一个专门的科学领域。
         </p>
         <p>
           体育是人类社会发展中，根据生产和生活的需要，遵循人体身心的发展规律，以身体练习为基本手段，达到增强体质，提高运动技术水平，进行思想品德教育，丰富社会文化生活而进行的一种有目的、有意识、有组织的社会活动，是伴随人类社会的发展而逐步建立和发展起来的一个专门的科学领域。
@@ -30,8 +33,13 @@
 </template>
 
 <script>
+import Bscroll from "better-scroll";
 export default {
+  name: 'home-sleep',
   methods: {
+    mounted() {
+      this.scroll = new Bscroll(this.$refs.wrapper,{click: true});
+    },
     back() {
       this.$router.back();
     }
@@ -92,10 +100,13 @@ export default {
   }
 
   .p-footer {
+    height .7rem
     background-color: #fff;
     display table-cell
     vertical-align middle
-    
+    z-index: 50
+    bottom 0
+    position absolute
   }
 
   .footer-write {
