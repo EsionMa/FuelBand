@@ -42,58 +42,16 @@
         </div>
       </div>
       <div class="rank-my-info">
-        <span class="rank-num">1</span>
-        <img class="friend-icon" src="~images/SomeUser.png">
-        <span>Admin</span>
-        <div class="step-praise-account">
-          <div class="step-account">
-            <span class="step-account-num">65547</span>
-          </div>
-          <div class="praise-account">
-            <img src="~images/praise.png" class="praise-account-img">
-            <p class="praise-account-num">32</p>
-          </div>
-        </div>
-      </div>
-      <div class="rank-my-info">
-        <span class="rank-num">1</span>
-        <img class="friend-icon" src="~images/SomeUser.png">
-        <span>Admin</span>
-        <div class="step-praise-account">
-          <div class="step-account">
-            <span class="step-account-num">65547</span>
-          </div>
-          <div class="praise-account">
-            <img src="~images/praise.png" class="praise-account-img">
-            <p class="praise-account-num">32</p>
-          </div>
-        </div>
-      </div>
-      <div class="rank-my-info">
         <span class="rank-num">2</span>
         <img class="friend-icon" src="~images/SomeUser.png">
-        <span>Bbb</span>
+        <span>Base</span>
         <div class="step-praise-account">
           <div class="step-account">
-            <span class="step-account-num">52354</span>
+            <span class="step-account-num">40000</span>
           </div>
           <div class="praise-account">
             <img src="~images/praise.png" class="praise-account-img">
-            <p class="praise-account-num">16</p>
-          </div>
-        </div>
-      </div>
-      <div class="rank-my-info">
-        <span class="rank-num">3</span>
-        <img class="friend-icon" src="~images/SomeUser.png">
-        <span>Ccc</span>
-        <div class="step-praise-account">
-          <div class="step-account">
-            <span class="step-account-num">42001</span>
-          </div>
-          <div class="praise-account">
-            <img src="~images/praise.png" class="praise-account-img">
-            <p class="praise-account-num">0</p>
+            <p class="praise-account-num">32</p>
           </div>
         </div>
       </div>

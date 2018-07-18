@@ -38,7 +38,8 @@ module.exports = {
       '@': resolve('src'),
       // 配置path别名，简化src styles的路径书写
       'styles': resolve('src/assets/styles'),
-      'images': resolve('src/assets/images')
+      'images': resolve('src/assets/images'),
+      'base': resolve('src/base')
     }
   },
   module: {

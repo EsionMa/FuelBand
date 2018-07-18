@@ -4,7 +4,7 @@ import Home from '../pages/home/Home'
 import My from '../pages/my/My'
 import Rank from '../pages/rank/Rank'
 import Train from '../pages/train/Train'
-import HomeSleep from '../pages/home-sleep/Home-sleep'
+import HomeTopic from '../pages/home-topic/Home-topic'
 // import HelloWorld from '@/components/HelloWorld'
 
 Vue.use(Router)
@@ -20,8 +20,8 @@ export default new Router({
       component: Home,
       children: [
         {
-          path: 'homesleep',
-          component: HomeSleep
+          path: 'hometopic',
+          component: HomeTopic
         }
       ]
     },
@@ -37,10 +37,6 @@ export default new Router({
       path: '/my',
       component: My
     },
-    // {
-    //   path: '/home-sleep',
-    //   component: HomeSleep
-    // },
     {
       path: '*',
       redirect: '/'

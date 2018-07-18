@@ -95,9 +95,8 @@ export default {
       background: #e4e4e4
       transform: scaleY(0.5)
   .tab-list
-    flex: 1
+    flex-grow: 1
     text-align: center
-    // margin 0 auto
     .icon-item
       width: 0.5rem
       heigth: 0.5rem

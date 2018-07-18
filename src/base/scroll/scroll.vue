@@ -38,6 +38,11 @@
         default: 20
       }
     },
+    created () {
+      this.$nextTick(() => {
+          this._initScroll();
+      });
+    },
     mounted() {
       setTimeout(() => {
         this._initScroll()
