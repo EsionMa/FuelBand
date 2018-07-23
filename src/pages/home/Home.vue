@@ -1,6 +1,6 @@
 <template>
-  <div class="home" ref="wrapper">
-    <div>
+  <div class="home">
+    <div ref="wrapper">
       <div class="home-header" >
         <div class="home-header-info" >
           <p class="home-header-title">今日步数</p>
@@ -84,7 +84,9 @@ import Bscroll from "better-scroll";
 export default {
   name: "Home",
   mounted() {
-    this.scroll = new Bscroll(this.$refs.wrapper,{click: true});
+    setTimeout(() => {
+      this.scroll = new Bscroll(this.$refs.wrapper, { click: true });
+    }, 20);
   }
 };
 </script>
